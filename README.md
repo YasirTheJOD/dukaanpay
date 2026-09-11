@@ -46,6 +46,7 @@ storage bucket) lives in **`supabase/schema.sql`**.
 > **Status (Sep 2026):** web app deployed to Vercel ✅ · debug APK built and installed on a
 > device via adb ✅. The exact proven Windows APK toolchain (JDK 21, SDK components, adb)
 > is documented in [BUILD-APK.md §5](./BUILD-APK.md).
+> Git → Vercel is connected: every `git push` to `main` auto-deploys the web app.
 
 ## Stack
 
