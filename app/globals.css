@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --brand: #0ea75f;
+  --brand-dark: #067a45;
+}
+
+html,
+body {
+  height: 100%;
+  background: #f4f6f8;
+  color: #111827;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Hide number input spinners */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.btn-primary {
+  @apply w-full rounded-xl bg-[#0ea75f] px-4 py-3 text-center font-semibold text-white transition active:scale-[0.99] disabled:opacity-50;
+}
+.btn-outline {
+  @apply w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-center font-semibold text-gray-800 transition active:scale-[0.99] disabled:opacity-50;
+}
+.card {
+  @apply rounded-2xl border border-gray-200 bg-white p-4 shadow-sm;
+}
+.input {
+  @apply w-full rounded-xl border border-gray-300 bg-white px-3 py-2.5 text-sm outline-none focus:border-[#0ea75f] focus:ring-2 focus:ring-[#0ea75f22];
+}
+.label {
+  @apply mb-1 block text-xs font-semibold text-gray-600;
+}
+.chip {
+  @apply rounded-full border border-gray-300 bg-white px-3 py-1.5 text-xs font-semibold text-gray-700;
+}
